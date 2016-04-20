@@ -1,0 +1,30 @@
+﻿<div class="header">
+    <div class="container-fluid">
+        <div style="position: relative;">
+            <div class="logo_new_inner">
+            </div>
+
+            <div class="info right">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><strong>Utilisateur&nbsp;:</strong>&nbsp;<span id="top-header-name"></span></li>
+                        <li><strong>&nbsp;| Rôle&nbsp;:</strong>&nbsp;<span id="top-header-role"></span></li>
+                        <li><strong>&nbsp;| Date&nbsp;:</strong>&nbsp;@DateTime.Now.ToString("dd/MM/yyyy")</li>
+                        <li><strong>&nbsp;| <a id="top-header-logout" class="clickable">Déconnexion</a></strong> </li>
+                    </ul>
+                </div>
+
+                <div class="titre">
+                    <h1><span class="tooltip-link" data-toggle="tooltip" data-placement="left" title="@ViewBag.AppVersion">@ViewBag.NameApp</span></h1>
+                </div>
+                <div class="titre-context">@ViewBag.Title</div>
+            </div>
+
+            <div class="bg_new_center">
+                <div id="menu-container" class="nav-menu">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

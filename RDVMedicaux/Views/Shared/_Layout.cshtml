@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - RDVMedicaux</title>
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/respond")
+
+    <script>
+        var APP = {
+            baseUrl: "@Url.Content("~/")",
+            version: "@ViewBag.AppVersion"
+        };
+
+        // configuration
+        var require = {
+
+            // Ajout du paramètre de cache
+            urlArgs: "bust=" + APP.version,
+
+            // baseUrl : url base des modules
+            baseUrl: '@Url.Content("~/Assets/App")',
+
+            enforceDefine: false,
+
+            paths: {
+                jquery: '@Url.Content("~/Assets/Libs/jquery/jquery-1.10.2")',
+                ko: '@Url.Content("~/Assets/Libs/ko/knockout-3.2.0.debug")',
+                domready: '@Url.Content("~/Assets/Libs/require/domReady")',
+                bootstrap: '@Url.Content("~/Assets/Libs/bootstrap/bootstrap")',
+                datepicker: '@Url.Content("~/Assets/Libs/bootstrap/bootstrap-datepicker")',
+                modernizr: '@Url.Content("~/Assets/Libs/shim/modernizr-2.6.2")',
+                respond: '@Url.Content("~/Assets/Libs/shim/respond")',
+                amplify: '@Url.Content("~/Assets/Libs/amplify/amplify")',
+            },
+            shim: {
+                'bootstrap': {
+                    deps: ['jquery']
+                },
+                'amplify': {
+                    deps: ['jquery'],
+                    exports: 'amplify'
+                },
+                'datepicker': {
+                    deps: ['bootstrap'],
+                    exports: '$.fn.datepicker'
+                }
+            }
+        };
+
+    </script>
+
+</head>
+<body>
+    <header id="header-wrapper">
+        <div class="top-header-logo"></div>
+        <div class="top-header-title">
+            <p>TROUVER UN MEDECIN</p>
+            <p>MODIFIER UN RENDEZ-VOUS</p>
+        </div>
+    </header>
+    <div class="container-fluid" style="padding-left:5px;padding-right:5px;">
+        <div id="wrapper">
+            <div id="page-wrapper">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <div id="loading-indicator"></div>
+</body>
+</html>
