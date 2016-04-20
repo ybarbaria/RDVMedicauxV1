@@ -13,6 +13,10 @@ namespace RDVMedicaux
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Robots.txt",
+                "robots.txt",
+                new { controller = "Home", action = "Robots" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

@@ -13,7 +13,7 @@
             /// <summary>
             /// Table Practicien
             /// </summary>
-            public const string Practicien = "dbo.PracticiensAnnuaire";
+            public const string Practicien = "dbo.PraticiensAnnuaire";
 
             /// <summary>
             /// Table Practicien

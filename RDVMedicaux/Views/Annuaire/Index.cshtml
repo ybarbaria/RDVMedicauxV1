@@ -1,36 +1,27 @@
-﻿@{
-    ViewBag.Title = "Recherche";
-}
-
+﻿<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 <script data-main="annuaire/main" src="@Url.Content("~/Assets/Libs/require/require.js")"></script>
 
 <div class="search-criteria">
     <form role="form">
         <div class="row">
-            <div class="col-md-5">
-                <input type="text" class="form-control" placeholder="Saisir un lieu de recherche" />
+            <div class="col-md-5 bottom-5">
+                <input type="text" class="form-control" data-bind="addressAutocomplete: lieu" />
             </div>
-            <div class="col-md-5">
-                <select class="form-control form-select">
-                    <option value="10">Dermatologue</option>
-                    <option value="21">Ophtalmologue</option>
-                    <option value="22">ORL</option>
-                </select>
+            <div class="col-md-5 bottom-5">
+                <select class="form-control" data-bind="options: listSpecialite,  optionsText: 'label', optionsValue: 'id',value: selectedSpec ,optionsCaption: 'Spécialité...'"></select>
             </div>
-            <div class="col-md-2">
-                <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>&nbsp;Trouver</button>
+            <div class="col-md-2 bottom-5">
+                <button class="btn btn-primary" data-bind="click: _onSearch"><span class="glyphicon glyphicon-search"></span>&nbsp;Trouver</button>
             </div>
         </div>
         <div class="row top-10">
-            <div class="col-md-3">
+            <div class="col-md-12">
                 <label for="search-byname" class="checkbox-inline">
-                    <input type="checkbox" id="search-byname" />
+                    <input type="checkbox" class="custom-checkbox" id="search-byname" data-bind="checked: sortByName" />
                     Trier par nom
                 </label>
-            </div>
-            <div class="col-md-3">
-                <label for="search-bysector" class="checkbox-inline">
-                    <input type="checkbox" id="search-bysector" />
+                <label for="search-sector1" class="checkbox-inline">
+                    <input type="checkbox" class="custom-checkbox" id="search-sector1" data-bind="checked: sortBySector1" />
                     Médecin secteur 1
                 </label>
             </div>
@@ -41,143 +32,23 @@
 <div id="result-wrapper">
     <div class="result-zone">
         <div class="result-header">
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 1 </p>
-                        <p>Prénom 1</p>
+            <div class="practicien-zone" data-bind="foreach: { data: listPracticien, as: 'practicien' }">
+                <div class="practicien-header clearfix top-10 hvr-glow" data-bind="css: { isNearOf: practicien.distance == 0 }">
+                    <div class="practicien-header-infos row">
+                        <div class="practicien-icon col-md-1"></div>
+                        <div class="col-md-4 bold" data-bind="text: practicien.nom + ' - '+ practicien.prenom"></div>
+                        <div class="col-md-4" data-bind="text: practicien.specialite"></div>
+                        <div class="col-md-2 pull-right" data-bind="text: practicien.distance + ' km', visible: practicien.distance > 0"></div>
                     </div>
-                    <div class="traitement-header-sign">
-                        <span>8 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 2 </p>
-                        <p>Prénom 2</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>5 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 3 </p>
-                        <p>Prénom 3</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>2 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 4 </p>
-                        <p>Prénom 4</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>10 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 4 </p>
-                        <p>Prénom 4</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>10 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 4 </p>
-                        <p>Prénom 4</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>10 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 4 </p>
-                        <p>Prénom 4</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>10 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 4 </p>
-                        <p>Prénom 4</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>10 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 4 </p>
-                        <p>Prénom 4</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>10 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
-                    </div>
-                </div>
-            </div>  
-            <div class="traitement-zone">
-                <div class="traitement-header stripes clearfix">
-                    <div class="traitement-header-data">
-                        <p>Nom 4 </p>
-                        <p>Prénom 4</p>
-                    </div>
-                    <div class="traitement-header-sign">
-                        <span>10 km</span>
-                    </div>
-                    <div class="traitement-header-count">
-
+                    <div class="practicien-content" data-bind="css: { isNearOf: practicien.distance == 0 }">
+                        <div class="row">
+                            <div class="col-md-12 col-md-offset-1" data-bind="text: 'Tarification ' + practicien.sectTarifaire"></div>
+                        </div>
+                        <div class="row top-5">
+                            <div class="col-md-4 col-md-offset-1" data-bind="text: practicien.nomVille + ' - ' + practicien.cp"></div>
+                            <div class="col-md-5" data-bind="text: practicien.adresse"></div>
+                            <div class="col-md-2" data-bind="visible: practicien.acceptCarteVitale">Carte vitale</div>
+                        </div>
                     </div>
                 </div>
             </div>

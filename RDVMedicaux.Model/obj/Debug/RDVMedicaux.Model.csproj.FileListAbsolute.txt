@@ -24,3 +24,55 @@ E:\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Razor.xml
 E:\RDVMedicaux\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.csprojResolveAssemblyReference.cache
 E:\RDVMedicaux\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.dll
 E:\RDVMedicaux\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.pdb
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\RDVMedicaux.Model.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\RDVMedicaux.Model.pdb
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Helpers.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Http.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Mvc.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Razor.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Helpers.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Http.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Mvc.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.Razor.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.csprojResolveAssemblyReference.cache
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.dll
+C:\Users\mlegouis\RDVMedicaux\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.pdb
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\RDVMedicaux.Model.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\RDVMedicaux.Model.pdb
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\Newtonsoft.Json.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Net.Http.Formatting.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Helpers.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Http.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Http.WebHost.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Mvc.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Razor.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Deployment.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Razor.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\Newtonsoft.Json.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Net.Http.Formatting.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Helpers.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Http.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Http.WebHost.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Mvc.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.Razor.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Deployment.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\bin\Debug\System.Web.WebPages.Razor.xml
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.dll
+\\psf\Home\Desktop\RDVMedicaux (4)\RDVMedicaux.Model\obj\Debug\RDVMedicaux.Model.pdb

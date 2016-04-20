@@ -8,6 +8,14 @@ namespace RDVMedicaux.Controllers
 {
     public class AnnuaireController : Controller
     {
+        #region -- Robots() Method --
+        public ActionResult Robots()
+        {
+            Response.ContentType = "text/plain";
+            return View();
+        }
+        #endregion
+
         /// <summary>
         /// GET: Annuaire
         /// </summary>

@@ -31,6 +31,6 @@ namespace RDVMedicaux.Model
         /// <summary>
         /// Obtient ou définit la longitude de la position GPS de la ville
         /// </summary>
-        public string LocY { get; set; }
+        public decimal LocY { get; set; }
     }
 }

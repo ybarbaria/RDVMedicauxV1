@@ -3,11 +3,7 @@
 * @class common.main.cfgSvc
 *
 * Module de gestion des informations de configuration
-* - utilisateur
-* - profil
 *
-* @uses jquery
-* @uses common.common.ajaxManager
 *
 *******************************************************/
 define(["jquery", "common/ajaxManager", "amplify"], function ($, ajaxMgr, amplify) {
@@ -43,12 +39,6 @@ define(["jquery", "common/ajaxManager", "amplify"], function ($, ajaxMgr, amplif
             var me = this,
                 cfg = amplify.store.sessionStorage(this.cacheKeyCfg);
 
-            // config stockée mais
-            //  -> vérifie que la conf est dans la version de l'application (stockée dans lyout)
-            // (si changement de version sans fermer fenêtre navigateur)
-            // -> vérifie que la config stockée est bien pour la meme adresse absolu (stockée dans lyout)
-            // pour eviter d'utiliser la config si on a changé de site ( ex : dev -> int ) sans fermer onglet ou fenêtre
-
             // post json pour obtenir toutes les configs serveur + user
             ajaxMgr.postJson(this.urlActionStart).done(
                 function (result) {
@@ -56,10 +46,6 @@ define(["jquery", "common/ajaxManager", "amplify"], function ($, ajaxMgr, amplif
                     if (result.success) {
                         cfg = result.data;
 
-                        // affectation
-                        //_currentUser = cfg.user;
-                        //_profils = cfg.profils;
-                        //_roles = cfg.roles;
                         me.nbMaxRow = cfg.nbMaxRow;
                         me.authCookieName = cfg.authCookieName;
 

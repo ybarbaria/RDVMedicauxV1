@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Web;
 
-namespace SoMove.ViewModels.Core
+namespace RDVMedicaux.ViewModels.Core
 {
     /// <summary>
     /// Classe de base des vues modèles

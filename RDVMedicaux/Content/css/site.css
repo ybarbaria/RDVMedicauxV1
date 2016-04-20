@@ -18,6 +18,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: white;
+    font-family: Calibri;
 }
 
 body {
@@ -34,12 +35,12 @@ body {
     left: 0;
     right: 0;
     height: 180px;
-    z-index: 1001; /* page-wrapper en dessous */
+    z-index: 1001;
     background-color: rgb(232, 231, 228);
 }
 
 #page-wrapper {
-    padding: 180px; /* espace autour du contenu de la page */
+    padding: 180px;
     background-color: #fff;
 }
 
@@ -70,6 +71,7 @@ body {
 
 .search-criteria {
     padding-bottom: 10px;
+    z-index: 1001;
 }
 
 .top-10 {
@@ -80,96 +82,115 @@ body {
     margin-top: 20px;
 }
 
-
-/***** Resultat recherche *****/
-
-.traitement-zone {
-    padding-bottom: 5px;
+.top-5 {
+    margin-top: 5px;
 }
 
-.traitement-header {
-    border: 1px solid black;
-    padding: 5px 0 0 5px;
+.bottom-5 {
+    margin-bottom: 5px;
 }
 
-.traitement-header-data {
-    float: left;
-    width: 350px;
+.bold {
+    font-weight: bold;
 }
 
-    .traitement-header-data p:first-child {
-        font-weight: bold;
+.custom-checkbox {
+    position: relative;
+    top: -0.375rem;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+}
+
+    .custom-checkbox:before {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        content: "";
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid #f2f2f2;
     }
 
-.treatment-header-status:before {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 5px;
-    margin-bottom: -3px;
-    content: "";
-}
-
-.treatment-header-status.draft:before {
-    background-color: #245F83;
-}
-
-.treatment-header-status.prepared:before {
-    background-color: #8C9A09;
-}
-
-.treatment-header-status.invalid:before {
-    background-color: #A1BACA;
-}
-
-.traitement-header-count span {
-    padding-left: 35px;
-    padding-right: 20px;
-    display: inline-block;
-    height: 40px;
-}
-
-.traitement-header-sign {
-    float: right;
-    padding-right: 20px;
-    font-size: larger;
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-}
-
-    .traitement-header-sign.plus {
-        background-image: url(../../Assets/imgs/bt/BT-ajouter-hover.png);
+    .custom-checkbox:checked:before {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        height: .5rem;
+        border-color: #009688;
+        border-top-style: none;
+        border-right-style: none;
     }
 
-    .traitement-header-sign.moins {
-        background-image: url(../../Assets/imgs/bt/BT-moins.png);
-    }
-
-.traitement-content {
-    border: 1px solid black;
-    border-top: none;
-    padding: 5px 0 0 5px;
-    display: none;
-}
-
-    .traitement-content ul {
-        padding-bottom: 10px;
-    }
-
-    .traitement-content li {
-        margin-top: 4px;
-        padding-top: 2px;
+    .custom-checkbox:after {
+        content: "";
+        position: absolute;
+        top: -0.125rem;
+        left: 0;
+        width: 1.1rem;
+        height: 1.1rem;
+        background: #fff;
         cursor: pointer;
     }
 
-        .traitement-content li > span {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+/***** Resultat Practiciens *****/
 
-[class^="icon-traitement-"] {
+.practicien-zone {
+    padding-bottom: 5px;
+}
+
+.practicien-header {
+    border: 2px solid #70a0c1;
+    border-bottom: none;
+    padding: 5px 0 0 5px;
+    background-color: #70a0c1;
+    border-radius: 25px;
+}
+
+.practicien-header-infos p:first-child {
+    font-weight: bold;
+}
+
+.practicien-content {
+    border: 2px solid #70a0c1;
+    background-color: #70a0c1;
+    border-top: none;
+    padding: 5px 0 0 5px;
+    border-radius: 25px;
+}
+
+div.isNearOf {
+    border-color: #7dccca;
+    background-color: #7dccca;
+}
+
+.practicien-icon {
+    margin-left: 10px;
+    background-image: url('../img/general/practicien.png');
     background-repeat: no-repeat;
-    background-size: 30px 30px;
+    height: 24px;
+    width: 24px;
+}
+
+/*** Effect Div  **/
+
+.hvr-glow {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+
+    .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    }

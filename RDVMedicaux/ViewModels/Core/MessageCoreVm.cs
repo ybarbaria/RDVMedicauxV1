@@ -5,7 +5,7 @@ using System.Web;
 
 using Newtonsoft.Json;
 using RDVMedicaux.AppException;
-using SoMove.ViewModels.Core;
+using RDVMedicaux.ViewModels.Core;
 
 namespace RDVMedicaux.ViewModels.Core
 {

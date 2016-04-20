@@ -90,6 +90,7 @@
     <Compile Include="Base\ConstDb.cs" />
     <Compile Include="Base\QueryBuilder.cs" />
     <Compile Include="Base\SqlServerConnectionHelper.cs" />
+    <Compile Include="Util\Util.cs" />
     <Compile Include="PracticienDb.cs" />
     <Compile Include="VilleDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,7 +103,12 @@
       <Project>{e29a0fcd-386e-4375-80cc-0c59d5601622}</Project>
       <Name>RDVMedicaux.AppException</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RDVMedicaux.Model\RDVMedicaux.Model.csproj">
+      <Project>{35a68bcb-8d9d-4e57-b7da-67c367e1cb71}</Project>
+      <Name>RDVMedicaux.Model</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
